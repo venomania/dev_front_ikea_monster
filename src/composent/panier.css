@@ -1,0 +1,56 @@
+.const{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.one{
+    grid-column: 1;
+   
+}
+.two{
+    grid-column: 2 ;
+}
+.three{
+    grid-column: 3 ;
+}
+
+.img_cal{
+    height: 10pc;
+}
+
+.trait{
+    background: black;
+    height: 2px;
+    width: 100%;
+}
+td{
+    width: 25%;
+}
+nav{
+    height: 9vh;
+}
+.round{
+    
+    background: green;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+
+}
+
+
+
+button{
+    background: #264a65;
+    border: #b4972f solid;
+    width: 20%;
+    height: 10%;
+    margin-left: 80%;
+    color: white;
+    margin-top: 5%; 
+}
+
+button:hover{
+    background: #172c3b;
+}
