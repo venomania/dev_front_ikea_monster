@@ -2,6 +2,7 @@ import './App.css';
 import Homme from './composent/Homme';
 import Payment from './composent/Payment';
 import Card from './composent/Card';
+import Godcard from './composent/Godcard';
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
  
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route exact path='/Panier' element={< Payment />}></Route>
             <Route exact path='/' element={< Homme />}></Route>
             <Route exact path='/payemnt' element={< Card />}></Route>
+            <Route exact path='/valide' element={ <Godcard />  }></Route>
           </Routes>
       </Router>
       

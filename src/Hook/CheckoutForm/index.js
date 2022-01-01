@@ -16,7 +16,7 @@ export const CheckoutForm = () => {
 
     if (!error) {
       console.log("Stripe 23 | token generated!", paymentMethod);
-      navigate('/'); 
+      navigate('/valide'); 
       //send token to backend here
     } else {
       console.log(error.message);

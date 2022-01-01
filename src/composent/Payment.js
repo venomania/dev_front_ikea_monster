@@ -47,10 +47,10 @@ function Payment({}) {
                     </span>
                 </div>
             </nav>
+            <div className="parallax"> 
         <div className="const">
         <div className="one" ></div>
         <div className="tow" >
-            
         <table>
         <tbody>
             <tr>
@@ -71,10 +71,11 @@ function Payment({}) {
             <button>Valider</button>
         </Link>
         </div>
+
         <div className="three" ></div>
 
     </div>
-   
+        </div>
     </div>
     );
 }
