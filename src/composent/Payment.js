@@ -3,6 +3,7 @@ import "../App.css"
 import achat from '../achat.png';
 import './panier.css';
 import './progresse.css';
+import logo from "./Logo.png";
 import { BrowserRouter as Router,Link } from 'react-router-dom';
 
 function Payment({}) {
@@ -35,6 +36,9 @@ function Payment({}) {
     return (
         <div>
             <nav>
+                <Link to="/">
+                    <img src={logo} alt=""  className='logo'/>
+                </Link>
                 <div id="progression">
                     <span class="etape">
                         1<div class="desc">Panier</div>
@@ -75,7 +79,7 @@ function Payment({}) {
         <div className="three" ></div>
 
     </div>
-        </div>
+        </div>  
     </div>
     );
 }
