@@ -28,7 +28,7 @@ function Homme({}) {
   
   const test = () =>{
     console.log("jioke") ;
-    var matable = [{nom:"boit tintin",prix:255,quantiter:1}];
+    var matable = [{nom:"FIGURINE TINTIN",prix:255,quantiter:1}];
     localStorage.setItem("table", JSON.stringify(matable));
    const a = JSON.parse(localStorage.getItem("table"));
     console.log(a[0].quantiter);
