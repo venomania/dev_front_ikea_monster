@@ -10,7 +10,7 @@ body {
 }
 #progression {
 	margin: 0 auto;
-	padding-bottom: 23px; /* taille de la margin top et de lataille de police de la description */
+	padding-bottom: 23px; 
 }
 #progression > * {
 	background: #DEDEDE;
