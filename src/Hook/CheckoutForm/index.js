@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
+import { CardElement, useStripe, useElements , CardElementComponent } from "@stripe/react-stripe-js";
 import { useNavigate } from 'react-router-dom';
 
 export const CheckoutForm = () => {
@@ -15,11 +15,11 @@ export const CheckoutForm = () => {
     });
 
     if (!error) {
-      console.log("Stripe 23 | token generated!", paymentMethod);
       navigate('/valide'); 
       //send token to backend here
     } else {
       console.log(error.message);
+      alert(error.message);
     }
   };
 

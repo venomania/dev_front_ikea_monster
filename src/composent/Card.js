@@ -35,9 +35,9 @@ function Card(){
                             </div>
                         </div>
                 
-                    
+                        </div>
                 <div className="three" ></div>
-            </div>
+            
         </div>
     </div>
     

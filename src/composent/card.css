@@ -21,15 +21,14 @@ h1{
     grid-column: 3 ;
 }
 .card{
-    border: solid 1px
- black;
+    border: solid 1px whitesmoke ;
     margin-top: 40%;
     height: 25vh;
     width: 60vh;
     -webkit-box-shadow: 5px 5px 0px 1px #999999; 
-    box-shadow: 5px 5px 0px 1px #999999;
+    box-shadow: 7px 7px 0px 1px #999999;
     border-radius: 2%;
-    background: whitesmoke;
+    background: whitesmoke ;
 
 }
 .frist{
@@ -55,6 +54,8 @@ label{
 }
 .postxt{
     margin-top: 15%;
+    width: 80%;
+    margin-left: 6%;
 }
 .card button {
     margin-top: 16%;
