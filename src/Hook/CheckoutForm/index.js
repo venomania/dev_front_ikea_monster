@@ -9,12 +9,14 @@ export const CheckoutForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    
     const { error, paymentMethod } = await stripe.createPaymentMethod({
       type: "card",
       card: elements.getElement(CardElement),
     });
 
     if (!error) {
+      console.log("Stripe 23 | token generated!", paymentMethod);
       navigate('/valide'); 
       //send token to backend here
     } else {

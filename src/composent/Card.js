@@ -8,6 +8,7 @@ import { BrowserRouter as Router,Link } from 'react-router-dom';
 import "./card.css";
 const stripePromise = loadStripe('pk_test_51KCos0BbvjBvzwSPdycLvKrUAzzfyb5XT8m6caeice8B38OJgjzC80KsjfRzpL31eIP7lbAO7G1sOZSb0CyxR1L80023bSuAOU');
 
+
 function Card(){
     return(
         <div>
@@ -27,7 +28,7 @@ function Card(){
                 </span>
             </div>
         </nav>
-        <div className="parallax"> 
+        <div className="parallax fond"> 
             <div className="const">
                 <div className="one" ></div>
                 <div className="tow" >

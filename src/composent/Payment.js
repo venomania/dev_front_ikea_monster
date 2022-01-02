@@ -18,7 +18,7 @@ function Payment({}) {
     const onChange = (e) => {
         
         if(e.currentTarget.value > 0){
-            var matable = [{nom:"boit tintin",prix: 255 *e.currentTarget.value ,quantiter:e.currentTarget.value}];
+            var matable = [{nom:"FIGURINE TINTIN",prix: 255 *e.currentTarget.value ,quantiter:e.currentTarget.value}];
             localStorage.setItem("table", JSON.stringify(matable));
             console.log(255 *e.currentTarget.value)
         }
