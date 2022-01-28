@@ -1,16 +1,12 @@
 import React from "react";
-import valid from "./valid.gif";
 import "./Godcard.css"
 import { BrowserRouter as Router,Link } from 'react-router-dom';
-import logo from "./Logo.png";
+
 
 const Godcard = () => {
     return(
         <div>
         <nav>
-        <Link to="/">
-            <img src={logo} alt=""  className='logo'/>
-        </Link>
         <div id="progression">
             <span class="etape fait">
                 1<div class="desc">Panier</div>
@@ -24,7 +20,6 @@ const Godcard = () => {
         </div>
     </nav>
     <div className="parallax  ">
-        <img src={valid} alt="" className="valid" />
         <h3>Payment Successful</h3>
         <Link to='/'>
             <h5>Retoure Boutique</h5>

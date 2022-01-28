@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardElement, useStripe, useElements , CardElementComponent } from "@stripe/react-stripe-js";
+import { CardElement, useStripe, useElements , CardElementComponent ,charges } from "@stripe/react-stripe-js";
 import { useNavigate } from 'react-router-dom';
 
 export const CheckoutForm = () => {
@@ -15,9 +15,18 @@ export const CheckoutForm = () => {
       card: elements.getElement(CardElement),
     });
 
+    const charge = await stripe.charges.create({
+      amount: 2000,
+      currency: 'eur',
+      source: paymentMethod.id,
+      description: 'My First Test Charge (created for API docs)',
+    });
+
     if (!error) {
-      console.log("Stripe 23 | token generated!", paymentMethod);
+      console.log("Stripe 23 | token generated!", paymentMethod.id);
+      charge();
       navigate('/valide'); 
+
       //send token to backend here
     } else {
       console.log(error.message);

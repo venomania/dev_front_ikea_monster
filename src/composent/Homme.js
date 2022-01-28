@@ -5,13 +5,14 @@ import { useEffect, useRef } from "react";
 import { BrowserRouter as Router,Link } from 'react-router-dom';
 import achat from '../achat.png';
 import "./homme.css";
+import shop from "../ShoppingBag.svg";
 
 function Homme({}) {
     const el = useRef(null);
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings:["FIGURINE TINTIN","FIGURINA DI TINTIN","ESTATUETA DE TINTIN","タンタンの置物","ФИГУРКА ТИНТИНА"],
+      strings:["IKEA MONSTER","宜家巨无霸","IKEA SZÖRNY","イケアモンスター","МОНСТР ИКЕА","وحش ايكيا"],
       // Speed settings, try diffrent values untill you get good results
       
       typeSpeed: 100,
@@ -35,23 +36,60 @@ function Homme({}) {
   }
     return (
       <div>
+        <div className='voirpanier'><img src={shop} alt="" /></div>
         <div className="parallax"> <h1 className="typing"> <span ref={el}></span></h1></div>
 
-        <div className="wrapper" >
-        <div className="one">
-        <p className="text">Huic Arabia est conserta, ex alio latere Nabataeis contigua; opima varietate conmerciorum castrisque oppleta validis et castellis, quae ad repellendos gentium vicinarum excursus sollicitudo pervigil veterum per oportunos saltus erexit et cautos. haec quoque civitates habet inter oppida quaedam ingentes Bostram et Gerasam atque Philadelphiam murorum firmitate cautissimas. hanc provinciae inposito nomine rectoreque adtributo obtemperare legibus nostris Traianus conpulit imperator incolarum tumore saepe contunso cum glorioso marte Mediam urgeret et Parthos.</p>
-        
-    
-        
-      <Link to='/Panier'>
-        <button className="price_card" onClick={test}> <h4> Prix :  255€  </h4></button>
-        </Link>
-        
-        
-        </div>
-        <div className="two">
+        <div className='containerAchat' > 
+          <div className='article'>
             <img src={achat} alt="" />
-        </div>
+            <div className="wrapper" >
+              <div className='one'> 
+                <h5> Meuble de Grand Mére pascale</h5>
+              </div> 
+              <div className='two'>
+               <a href='/article/{id}'> <button>Voir les détail</button></a>
+              </div> 
+            </div>
+          </div>
+
+          <div className='article'>
+            <img src={achat} alt="" />
+            <div className="wrapper" >
+              <div className='one'> 
+                <h5> Meuble de Grand Mére pascale</h5>
+              </div> 
+              <div className='two'>
+                <button>Voir les détail</button>
+              </div> 
+            </div>
+          </div>
+
+          <div className='article'>
+            <img src={achat} alt="" />
+            <div className="wrapper" >
+              <div className='one'> 
+                <h5> Meuble de Grand Mére pascale</h5>
+              </div> 
+              <div className='two'>
+                <button>Voir les détail</button>
+              </div> 
+            </div>
+          </div>
+
+
+
+          <div className='article'>
+            <img src={achat} alt="" />
+            <div className="wrapper" >
+              <div className='one'> 
+                <h5> Meuble de Grand Mére pascale</h5>
+              </div> 
+              <div className='two'>
+                <button>Voir les détail</button>
+              </div> 
+            </div>
+          </div>
+          
         </div>       
       </div>
     );

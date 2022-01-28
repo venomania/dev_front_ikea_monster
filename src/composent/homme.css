@@ -43,7 +43,14 @@ a{
     text-decoration: none;
     color: white;
 }
-
+.voirpanier{
+    width: 52px;
+        height: 52px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-right: 10px;
+}
 
 @media only screen and (max-device-width: 1366px) {
     nav {
@@ -51,7 +58,17 @@ a{
     }
 }
 
+.containerAchat{
+    margin-left: 16%;
+    margin-right: 10%;
+}
+.article{
+    float: left;
+    width: 45vh;
+    margin-right: 18%;
+
+}
 
 .typing{
-color: white;
+color: #7535dc;
 }
