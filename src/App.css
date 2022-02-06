@@ -54,7 +54,12 @@
     background-attachment: scroll;
   }
 }
-
+.wrapper_2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -73,6 +78,18 @@
 }
 .four {
   grid-column: 2 / 2;
+}
+.five_1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.five_2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.five_3 {
+  grid-column: 3;
+  grid-row: 1;
 }
 img{
   height: 28pc;
@@ -97,3 +114,11 @@ button:hover{
   margin-top: 15pc;
   margin-left: 5vh;
 } 
+.black{
+  color: black ;
+}
+
+.suite{
+  width: 20%;
+    height: 10%;
+}
